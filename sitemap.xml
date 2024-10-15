@@ -2,18 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://au12321ua.github.io/note/</loc>
-         <lastmod>2024-10-05</lastmod>
-    </url>
-    <url>
-         <loc>https://au12321ua.github.io/note/ADS/</loc>
-         <lastmod>2024-10-05</lastmod>
+         <lastmod>2024-10-15</lastmod>
     </url>
     <url>
          <loc>https://au12321ua.github.io/note/about/</loc>
-         <lastmod>2024-10-05</lastmod>
+         <lastmod>2024-10-15</lastmod>
+    </url>
+    <url>
+         <loc>https://au12321ua.github.io/note/ads/ADS%E9%94%99%E9%A2%98%E9%9B%86/</loc>
+         <lastmod>2024-10-15</lastmod>
+    </url>
+    <url>
+         <loc>https://au12321ua.github.io/note/com_org/chapter2/</loc>
+         <lastmod>2024-10-15</lastmod>
     </url>
     <url>
          <loc>https://au12321ua.github.io/note/com_org/chapter3/</loc>
-         <lastmod>2024-10-05</lastmod>
+         <lastmod>2024-10-15</lastmod>
+    </url>
+    <url>
+         <loc>https://au12321ua.github.io/note/pro_theory/chapter1/</loc>
+         <lastmod>2024-10-15</lastmod>
+    </url>
+    <url>
+         <loc>https://au12321ua.github.io/note/top_program/introduction/</loc>
+         <lastmod>2024-10-15</lastmod>
+    </url>
+    <url>
+         <loc>https://au12321ua.github.io/note/top_program/week1/</loc>
+         <lastmod>2024-10-15</lastmod>
     </url>
 </urlset>

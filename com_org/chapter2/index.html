@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://au12321ua.github.io/note/com_org/chapter3/">
+        <link rel="canonical" href="https://au12321ua.github.io/note/com_org/chapter2/">
       
       
-        <link rel="prev" href="../chapter2/">
+        <link rel="prev" href="../../about/">
       
+      
+        <link rel="next" href="../chapter3/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>chapter3 - 12321ua's notebook</title>
+        <title>chapter2 - 12321ua's notebook</title>
       
     
     
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              chapter3
+              chapter2
             
           </span>
         </div>
@@ -302,27 +304,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapter2/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    chapter2
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -337,7 +318,7 @@
           
   
   <span class="md-ellipsis">
-    chapter3
+    chapter2
   </span>
   
 
@@ -348,7 +329,7 @@
         
   
   <span class="md-ellipsis">
-    chapter3
+    chapter2
   </span>
   
 
@@ -370,35 +351,26 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      更快的加法器
+      寄存器
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="更快的加法器">
+    <nav class="md-nav" aria-label="寄存器">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#clacarry-lookahead-adder" class="md-nav__link">
+  <a href="#caller-saved-callee-saved" class="md-nav__link">
     <span class="md-ellipsis">
-      CLA（Carry-Lookahead Adder）
+      Caller-saved / Callee-saved
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#carry-skip-adder" class="md-nav__link">
+  <a href="#x0" class="md-nav__link">
     <span class="md-ellipsis">
-      Carry-Skip Adder
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#csacarry-select-adder" class="md-nav__link">
-    <span class="md-ellipsis">
-      CSA（Carry-select Adder）
+      x0 寄存器
     </span>
   </a>
   
@@ -412,27 +384,42 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      乘法计算
+      指令集
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="指令集">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      除法计算
+      参数解释
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#ieee-floating-point-format" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      IEEE Floating-Point Format
+      类型解释
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      一些常用指令
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -440,6 +427,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    chapter3
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -508,35 +516,26 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      更快的加法器
+      寄存器
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="更快的加法器">
+    <nav class="md-nav" aria-label="寄存器">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#clacarry-lookahead-adder" class="md-nav__link">
+  <a href="#caller-saved-callee-saved" class="md-nav__link">
     <span class="md-ellipsis">
-      CLA（Carry-Lookahead Adder）
+      Caller-saved / Callee-saved
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#carry-skip-adder" class="md-nav__link">
+  <a href="#x0" class="md-nav__link">
     <span class="md-ellipsis">
-      Carry-Skip Adder
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#csacarry-select-adder" class="md-nav__link">
-    <span class="md-ellipsis">
-      CSA（Carry-select Adder）
+      x0 寄存器
     </span>
   </a>
   
@@ -550,27 +549,42 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      乘法计算
+      指令集
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="指令集">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      除法计算
+      参数解释
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#ieee-floating-point-format" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      IEEE Floating-Point Format
+      类型解释
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      一些常用指令
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -589,91 +603,204 @@
                   
 
 
-  <h1>chapter3</h1>
+  <h1>chapter2</h1>
 
-<h3 id="_1">更快的加法器</h3>
-<h4 id="clacarry-lookahead-adder">CLA（Carry-Lookahead Adder）</h4>
-<p>在 RCA 中，进位位与和位一起计算，并且每个级必须等到前一个进位位计算完毕后才能开始计算自己的进位位，导致速度较慢。</p>
-<p>而在 CLA 中，提前计算出了前几位的进位，使得后续全加器不必前一位等待门延迟较高的和位计算，从而大大提高了速度。</p>
-<p>一般要保持扇入扇出与提前进位的平衡，若扇入扇出很大，也会造成时间的延长。</p>
-<p>它的另一个优点是速度稳定，有利于流水线运行。</p>
-<h4 id="carry-skip-adder">Carry-Skip Adder</h4>
-<p>Carry-Skip Adder 是一种并行加法器，它通过跳过一些不需要进位的位来减少进位传递的时间。</p>
-<p>具体来，对于某一位，若进位传递函数（Pi）的所有输入都为 1 或都为 0，则该位的进位可以直接跳过中间位，直接传递到后续的某一位。这样可以减少进位传递的延迟，从而加快加法运算的速度。比如：1 与 1，可以直接进位 1；0 与 0 就直接进位 0。</p>
-<p>平均来说，可以加快一半的进位速度，但不稳定，不适用于流水线运行。</p>
-<h4 id="csacarry-select-adder">CSA（Carry-select Adder）</h4>
-<p>进位选择加法器一般由纹波进位加法器和多路复用器组成。使用进位选择加法器将两个 n 位数字相加是通过两个加法器（因此是两个纹波进位加法器）完成的，以便执行两次计算，一次假设进位为零，另一次假设进位为零这将是一个。计算出两个结果后，一旦知道正确的进位输入，就可以使用多路复用器选择正确的总和以及正确的进位输出。</p>
-<p>这种设计可以显著提高加法器的运算速度，因为不需要等待逐位的进位传递。但是，它也增加了电路的复杂性和面积，因为需要额外的加法器和多路复用器。</p>
-<p>在实际应用中，进位选择加法器适用于需要高速计算的场合，如数字信号处理器（DSP）和图形处理单元（GPU）等。尽管它的硬件成本较高，但在性能要求较高的场景下，这种额外的成本是值得的。</p>
-<h3 id="_2">乘法计算</h3>
-<p>乘数 n 位，被乘数 n 位，积 2n 位。</p>
-<p>用 n 次加法实现乘法，开始时乘数储存在积的后 n 位，被乘数始终与积的前 n 位对齐。每一次加法，被乘数与“积”的最后一位相乘，再对应的加到积上，最后再将积右移。这个过程进行 n 次，即得到了最终的结果。</p>
-<p>比如：</p>
-<p><img alt="示例" src="../img_com/mult1.png" /></p>
-<p>对于有符号的乘法，则采用<strong>Booth's Algorithm</strong>，具体规则如下：</p>
-<p><img alt="booth rule" src="../img_com/booth%20rule.png" /></p>
-<p>但我学习的时候对 booth 算法在补码运算下为什么能将符号位纳入计算感觉很奇怪，特别是负数的时候。</p>
-<p>后面我自己想了个比较粗浅的解释，这里只是针对于负数，且不是很基本的解释：</p>
-<p>对于 n 位补码表示的-k，在 Booth 算法中实际上被看成$2^{n}-k$，但在实际运算中由于符号位前没有 0，使得$2^{n}$实际上并没有加上去，所以最终就是在运算被乘数的补码连续加了 k 次的结果。</p>
-<p>更深层的原因，我觉得可能就是 Booth 算法的设计与补码贴合很好吧。</p>
-<blockquote>
-<p>并行乘法：<br />
- 书上并未详细介绍，大概就是对乘数分块，被乘数逐块相乘，再相加。每次相加得到和与进位，和继续运算最终的到结果的中间部分，进位则是最终结果的一部分</p>
-</blockquote>
-<h3 id="_3">除法计算</h3>
-<p>除法计算类似正常的手算，是从最高一位开始尝试。对于除法器中保存的 2n 位的前 n 位试减，若结果小于 0 则还原，整体左移一位，然后在末尾补 0；若结果大于 0，则整体左移一位，在末尾补 1。运算到最后一次补位后（左移 n+1 次），左半侧右移一位，得到最终结果——左半侧为余数，右半侧为商。具体可参照下图中的过程：</p>
-<p><img alt="除法示意" src="../img_com/divi.png" /></p>
-<p>对于带符号的除法，可以先计算绝对值的除法，然后给商与余数添加符号。</p>
-<h3 id="ieee-floating-point-format">IEEE Floating-Point Format</h3>
-<p>可直接参照下面的标准：</p>
-<p><img alt="float" src="../img_com/float.png" /></p>
-<p>除此以外还有一些约定:</p>
-<p><img alt="standard" src="../img_com/standard.png" /></p>
-<p>浮点数加法，先将指数位统一，再相加常数位，最低有效位数取法与物理实验相同（保留到两数中较大的最低有效位），最后标准化得到答案。</p>
-<p>浮点数乘法，指数位相加，常数位相乘，考虑溢出后标准化。除法大体相同。但这里有个易错点，要注意指数位不是补码而是偏码，不能直接相加减，最好直接考虑十进制再转化成偏码。</p>
-<p>有效位数取法中的四舍六入五成双法，和正常十位数的实现思想大体相同，但具体上还是由于二进制特性而又一定区别。这里一共看三位，最新移出去的两位<code>guard</code>与<code>round</code>，还保留一个记录移出<code>round</code>的位数是否大于 0 的<code>sticky</code>位。进位情况可参考下方表格：</p>
+<p>一些基础内容：</p>
+<ol>
+<li>下面设计的内容源于<code>RISC-V</code>的<code>RV32I</code>指令集</li>
+<li>内存的基础单位为<code>byte</code>，即 8bit</li>
+<li>1 word = 4 byte</li>
+</ol>
+<h2 id="_1">寄存器</h2>
+<p>每个寄存器都是 32 位的</p>
 <table>
 <thead>
 <tr>
-<th>guard</th>
-<th>round</th>
-<th>sticky</th>
-<th>是否进位</th>
+<th>Register name</th>
+<th>Symbolic name</th>
+<th>Description</th>
+<th>Saved by</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>1</td>
-<td>/</td>
-<td>进位</td>
+<td>x0</td>
+<td>zero</td>
+<td>Always zero</td>
+<td></td>
 </tr>
 <tr>
-<td>0</td>
-<td>0</td>
-<td>/</td>
-<td>不进位</td>
+<td>x1</td>
+<td>ra</td>
+<td>Return address</td>
+<td>Caller</td>
 </tr>
 <tr>
-<td>0</td>
-<td>1</td>
-<td>/</td>
-<td>不进位</td>
+<td>x2</td>
+<td>sp</td>
+<td>Stack pointer</td>
+<td>Callee</td>
 </tr>
 <tr>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>成双（即让 LSB 为 0）</td>
+<td>x3</td>
+<td>gp</td>
+<td>Global pointer</td>
+<td></td>
 </tr>
 <tr>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>进位</td>
+<td>x4</td>
+<td>tp</td>
+<td>Thread pointer</td>
+<td></td>
+</tr>
+<tr>
+<td>x5</td>
+<td>t0</td>
+<td>Temporary / alternate return address</td>
+<td>Caller</td>
+</tr>
+<tr>
+<td>x6–7</td>
+<td>t1–2</td>
+<td>Temporaries</td>
+<td>Caller</td>
+</tr>
+<tr>
+<td>x8</td>
+<td>s0/fp</td>
+<td>Saved register / frame pointer</td>
+<td>Callee</td>
+</tr>
+<tr>
+<td>x9</td>
+<td>s1</td>
+<td>Saved register</td>
+<td>Callee</td>
+</tr>
+<tr>
+<td>x10–11</td>
+<td>a0–1</td>
+<td>Function arguments / return values</td>
+<td>Caller</td>
+</tr>
+<tr>
+<td>x12–17</td>
+<td>a2–7</td>
+<td>Function arguments</td>
+<td>Caller</td>
+</tr>
+<tr>
+<td>x18–27</td>
+<td>s2–11</td>
+<td>Saved registers</td>
+<td>Callee</td>
+</tr>
+<tr>
+<td>x28–31</td>
+<td>t3–6</td>
+<td>Temporaries</td>
+<td>Caller</td>
 </tr>
 </tbody>
 </table>
+<h3 id="caller-saved-callee-saved">Caller-saved / Callee-saved</h3>
+<p>简单来说，<code>Caller-saved</code>不保证调用者在经历一些不同进程后（比如进行函数调用）寄存器值相同，需要调用者自己在一些地方保存（内存、栈...）。而<code>Callee-saved</code>由程序保证，只要环境相同，前后调用值不会改变（系统会自动在切换进程时保存）。</p>
+<p>为什么要有这么麻烦的设计，问了一下 gpt，给了如下回答：</p>
+<p>在函数调用和返回的上下文中，区分 caller-saved（调用者保存）和 callee-saved（被调用者保存）寄存器是为了管理函数调用过程中寄存器的使用和保存，确保程序的正确性和寄存器的有效利用。这种区分主要基于以下几个原因：</p>
+<ol>
+<li>
+<p><strong>保持函数的可重入性（Reentrancy）</strong>：</p>
+</li>
+<li>
+<p><strong>Caller-saved</strong>：调用者在调用函数之前需要保存这些寄存器的值，并在函数返回后恢复它们。这样做是为了保证函数的可重入性，即同一个函数可以被多次调用，而不会相互干扰。</p>
+</li>
+<li>
+<p><strong>Callee-saved</strong>：被调用者负责在函数开始时保存这些寄存器的值，并在函数返回前恢复它们。这允许函数在执行过程中使用这些寄存器，而不必担心破坏调用者的上下文。</p>
+</li>
+<li>
+<p><strong>优化寄存器使用</strong>：</p>
+</li>
+<li>
+<p>通过区分 caller-saved 和 callee-saved 寄存器，编译器可以更有效地分配寄存器资源。调用者保存的寄存器可以在函数调用之间保持不变，而不需要在每次调用时都保存和恢复。</p>
+</li>
+<li>
+<p><strong>减少保存和恢复的开销</strong>：</p>
+</li>
+<li>
+<p>并不是所有的寄存器都需要在每次函数调用时都保存和恢复。通过区分 caller-saved 和 callee-saved 寄存器，可以减少不必要的保存和恢复操作，从而提高程序的执行效率。</p>
+</li>
+<li>
+<p><strong>简化编译器的寄存器分配策略</strong>：</p>
+</li>
+<li>
+<p>编译器在生成代码时，需要决定哪些寄存器用于局部变量，哪些用于函数参数，以及哪些用于返回值。通过区分 caller-saved 和 callee-saved 寄存器，编译器可以更容易地制定寄存器分配策略。</p>
+</li>
+<li>
+<p><strong>支持异常处理和信号处理</strong>：</p>
+</li>
+<li>
+<p>在异常处理和信号处理中，需要快速保存和恢复寄存器状态。通过区分 caller-saved 和 callee-saved 寄存器，可以更快地实现这一过程。</p>
+</li>
+<li>
+<p><strong>支持多线程环境</strong>：</p>
+</li>
+<li>在多线程环境中，线程可能会被中断并切换到其他线程。通过区分 caller-saved 和 callee-saved 寄存器，可以确保线程的上下文在切换时得到正确的保存和恢复。</li>
+</ol>
+<h3 id="x0">x0 寄存器</h3>
+<p>x0 寄存器是一个特殊的寄存器，它被硬编码为 0，也就是说，任何时候读取 x0 寄存器的值都会得到 0，同时，任何写入 x0 寄存器的操作都会被丢弃，不会影响其值。这个特性使得 x0 寄存器在编程和指令集设计中非常有用，因为它提供了一个常量 0 的来源，并且可以作为一个“丢弃”操作的结果的目标寄存器。</p>
+<p>由于 x0 寄存器的这一特性，它经常被用于简化指令集和编译器优化。例如，RISC-V 没有单独的<code>nop</code>（无操作）指令，而是可以通过写入 x0 寄存器来实现，如<code>addi x0, x0, 0</code>，这条指令实际上不会对程序状态产生任何影响，因为它写入了一个会被丢弃的寄存器。</p>
+<p>此外，x0 寄存器也用于实现其他一些操作，比如取负数指令可以通过<code>sub rd, x0, rs</code>来实现，这里<code>x0 - rs</code>等价于<code>0 - rs</code>，也就是<code>-rs</code>。同样，跳转指令也可以通过写入 x0 寄存器来实现，因为写入 x0 的任何值都会被丢弃，所以不会影响程序的状态。</p>
+<p>总的来说，x0 寄存器的设计是为了提高指令集的效率和简化编译器的工作，它不能被改变值，总是恒定为 0，写入操作会被忽略。</p>
+<h2 id="_2">指令集</h2>
+<blockquote>
+<p>参考<a href="https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/notebooks/RISCV/RISCV_CARD.pdf">rv32i reference card</a></p>
+</blockquote>
+<p><img alt="core-instruction" src="../img_com/core-instruc.png" /></p>
+<h3 id="_3">参数解释</h3>
+<ul>
+<li><code>opcode</code>: 操作码</li>
+<li><code>func3/func7</code>: 操作码的拓展位</li>
+<li><code>rd</code>: register destination，即目标寄存器</li>
+<li><code>rs1/rs2</code>: register source, 即源寄存器</li>
+<li><code>imm</code>: 立即数，也就是一般的常数</li>
+</ul>
+<h3 id="_4">类型解释</h3>
+<table>
+<thead>
+<tr>
+<th>目的</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用于寄存器-寄存器操作</td>
+<td>R 类型指令</td>
+</tr>
+<tr>
+<td>用于短立即数和访存 load 操作</td>
+<td>I 型指令</td>
+</tr>
+<tr>
+<td>用于访存 store 操作</td>
+<td>S 型指令</td>
+</tr>
+<tr>
+<td>用于条件跳转操作</td>
+<td>B 类型指令</td>
+</tr>
+<tr>
+<td>用于长立即数</td>
+<td>U 型指令</td>
+</tr>
+<tr>
+<td>用于无条件跳转</td>
+<td>J 型指令</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">一些常用指令</h3>
+<p><img alt="basic instruction" src="../img_com/basic_instruction.png" /></p>
 
 
 
