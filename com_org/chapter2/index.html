@@ -467,16 +467,59 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../ADS.md" class="md-nav__link">
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     ADS
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            ADS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ads/ADS%E9%94%99%E9%A2%98%E9%9B%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    错题集
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -707,7 +750,7 @@
 <p>简单来说，<code>Caller-saved</code>不保证调用者在经历一些不同进程后（比如进行函数调用）寄存器值相同，需要调用者自己在一些地方保存（内存、栈...）。而<code>Callee-saved</code>由程序保证，只要环境相同，前后调用值不会改变（系统会自动在切换进程时保存）。</p>
 <p>为什么要有这么麻烦的设计，问了一下 gpt，给了如下回答：</p>
 <p>在函数调用和返回的上下文中，区分 caller-saved（调用者保存）和 callee-saved（被调用者保存）寄存器是为了管理函数调用过程中寄存器的使用和保存，确保程序的正确性和寄存器的有效利用。这种区分主要基于以下几个原因：</p>
-<ol>
+<ul>
 <li>
 <p><strong>保持函数的可重入性（Reentrancy）</strong>：</p>
 </li>
@@ -745,7 +788,7 @@
 <p><strong>支持多线程环境</strong>：</p>
 </li>
 <li>在多线程环境中，线程可能会被中断并切换到其他线程。通过区分 caller-saved 和 callee-saved 寄存器，可以确保线程的上下文在切换时得到正确的保存和恢复。</li>
-</ol>
+</ul>
 <h3 id="x0">x0 寄存器</h3>
 <p>x0 寄存器是一个特殊的寄存器，它被硬编码为 0，也就是说，任何时候读取 x0 寄存器的值都会得到 0，同时，任何写入 x0 寄存器的操作都会被丢弃，不会影响其值。这个特性使得 x0 寄存器在编程和指令集设计中非常有用，因为它提供了一个常量 0 的来源，并且可以作为一个“丢弃”操作的结果的目标寄存器。</p>
 <p>由于 x0 寄存器的这一特性，它经常被用于简化指令集和编译器优化。例如，RISC-V 没有单独的<code>nop</code>（无操作）指令，而是可以通过写入 x0 寄存器来实现，如<code>addi x0, x0, 0</code>，这条指令实际上不会对程序状态产生任何影响，因为它写入了一个会被丢弃的寄存器。</p>
