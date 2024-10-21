@@ -1,13 +1,39 @@
 site_name: 12321ua's notebook
-site_url: https://au12321ua.github.io/note/
+site_url: https://note.12321ua.cn/
+repo_url: https://github.com/au12321ua/note.git
+site_description: "my notebook, but maybe a bit simple now..."
+site_author: "12321ua"
 theme:
   name: material
+  palette:
+    scheme: preference
+  favicon: img/favicon.ico
+  features:
+    - navigation.instant
+    - navigation.tabs           # Enable the tabs navigation
+    # - navigation.tabs.sticky    # Make the tabs navigation sticky
+    - navigation.indexes        # Enable the indexes navigation(即可以设置一个导航页)
 nav:
   - 主页: index.md
   - 关于我: about.md
   - 课程笔记:
     - 计算机组成: 
+      - com_org/index.md
       - chapter2: com_org/chapter2.md
       - chapter3: com_org/chapter3.md
     - ADS: 
       - 错题集: ads/ADS错题集.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition            # 提示框  用法:!!!{提示框类型}{"提示框标题"}
+  - pymdownx.details      # 开启提示框折叠功能 用法:???[+（若加上则默认打开）]{提示框类型}{提示框标题}
+  - pymdownx.superfences  # 支持提示框中嵌套代码块和提示框
+  - pymdownx.highlight:   # 代码块高亮
+      linenums: true      # 代码块显示行号
+      linenums_style: pymdownx.inline
+
+plugins:
+  - search:
+      lang: zh
