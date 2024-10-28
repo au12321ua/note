@@ -18,7 +18,8 @@ nav:
   - 关于我: about.md
   - 课程笔记:
     - 计算机组成: 
-      - com_org/index.md
+      - com_org/summary.md
+      - chapter1: com_org/chapter1.md
       - chapter2: com_org/chapter2.md
       - chapter3: com_org/chapter3.md
     - ADS: 
